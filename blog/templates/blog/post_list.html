@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1><a href="/">Black_panda</a></h1>
         </div>
-        <div><img src="https://i.ytimg.com/vi/Uy31pdfntUw/hqdefault.jpg"></div>
+        
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
@@ -22,10 +22,11 @@
                             </div>
                             <h1><a href="">{{ post.title }}</a></h1>
                             <p>{{ post.text|linebreaksbr }}</p>
+                            <div><img src="{{post.photo}}" alt="" height="200" width="200"></div>
                             <a href="{{ post.link }}">Click here to watch a video.</a>
                         </div>
                     {% endfor %}
-                </div>
+                </div> </div>
             </div>
         </div>
     </body>
